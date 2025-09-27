@@ -1080,7 +1080,7 @@ input, select, textarea {
 		.button.primary {
 		    background-color: #1753b3; /* knallige Farbe */
 		    color: #ffffff !important;
-		    box-shadow: 0 0 20px #ff4081, 0 0 40px #1753b3; /* leuchtender Effekt */
+		    box-shadow: 0 0 20px #1753b3, 0 0 40px #1753b3; /* leuchtender Effekt */
 		    transition: all 0.3s ease-in-out;
 		}
 		
@@ -1666,6 +1666,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
