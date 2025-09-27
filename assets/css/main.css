@@ -1090,57 +1090,6 @@ input, select, textarea {
 		    transform: scale(1.05); /* leichtes Aufpoppen beim Hover */
 		}
 
-		/* --------------------------------- */
-		/* GROSSER PRIMARY BUTTON / INPUT    */
-		/* --------------------------------- */
-		
-		/* Gemeinsame Styles für alle großen Buttons/Inputs */
-		.button.primary.big,
-		button.primary.big,
-		input[type="submit"].primary_big,
-		input[type="reset"].primary_big,
-		input[type="button"].primary_big {
-		    background-color: #ff4500;   /* kräftiges Orange */
-		    color: white;                /* Textfarbe */
-		    font-size: 1.8em;            /* größere Schrift */
-		    border-radius: 12px;         /* abgerundete Ecken */
-		    box-shadow: 0 0 15px #ff4500; /* leichter Glow */
-		    text-shadow: 0 0 5px white;   /* Text leicht leuchtend */
-		    transition: all 0.3s ease;   /* sanfte Übergänge */
-		    cursor: pointer;
-		    border: none;
-		}
-		
-		/* Flexbox für <button> für perfekte Zentrierung */
-		.button.primary.big,
-		button.primary.big {
-		    display: inline-flex;
-		    align-items: center;        /* vertikal zentrieren */
-		    justify-content: center;    /* horizontal zentrieren */
-		    padding: 1em 3em;           /* ausreichend Platz */
-		}
-		
-		/* <input> braucht Flexbox nicht, hier über padding & line-height zentrieren */
-		input[type="submit"].primary_big,
-		input[type="reset"].primary_big,
-		input[type="button"].primary_big {
-		    padding: 1em 3em;
-		    line-height: 1.2;           /* vertikale Zentrierung */
-		    text-align: center;          /* horizontale Zentrierung */
-		    height: auto;
-		}
-		
-		/* Hover-Effekt für alle Buttons/Inputs */
-		.button.primary.big:hover,
-		button.primary.big:hover,
-		input[type="submit"].primary_big:hover,
-		input[type="reset"].primary_big:hover,
-		input[type="button"].primary_big:hover {
-		    background-color: #ff6600;   /* heller beim Hover */
-		    transform: scale(1.1);       /* leicht vergrößern */
-		    box-shadow: 0 0 25px #ff6600, 0 0 40px #ff6600; /* stärkerer Glow */
-		}
-
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
@@ -1717,6 +1666,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
