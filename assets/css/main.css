@@ -1078,15 +1078,15 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-		    background-color: #ff4081; /* knallige Farbe */
+		    background-color: #1753b3; /* knallige Farbe */
 		    color: #ffffff !important;
-		    box-shadow: 0 0 20px #ff4081, 0 0 40px #ff4081; /* leuchtender Effekt */
+		    box-shadow: 0 0 20px #ff4081, 0 0 40px #1753b3; /* leuchtender Effekt */
 		    transition: all 0.3s ease-in-out;
 		}
 		
 		.button.primary:hover {
-		    background-color: #ff1c62;
-		    box-shadow: 0 0 30px #ff1c62, 0 0 60px #ff1c62;
+		    background-color: #043482;
+		    box-shadow: 0 0 30px #043482, 0 0 60px #043482;
 		    transform: scale(1.05); /* leichtes Aufpoppen beim Hover */
 		}
 
@@ -1666,6 +1666,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
