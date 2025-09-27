@@ -1104,6 +1104,18 @@ input, select, textarea {
 		    transition: all 0.3s ease;   /* sanfter Übergang für Hover */
 		}
 
+		.button.primary.big {
+		    display: inline-flex;
+		    align-items: center;   /* vertikal zentrieren */
+		    justify-content: center; /* horizontal zentrieren */
+		    font-size: 1.8em;
+		    padding: 1em 3em;
+		    border-radius: 12px;
+		    box-shadow: 0 0 15px #ff4500;
+		    text-shadow: 0 0 5px white;
+		    transition: all 0.3s ease;
+		}
+
 		.button.primary.big:hover {
 		    background-color: #ff6600;   /* heller beim Hover */
 		    transform: scale(1.1);       /* leichtes Vergrößern */
@@ -1691,4 +1703,5 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
