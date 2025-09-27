@@ -1076,6 +1076,7 @@ input, select, textarea {
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
+		button.primary,
 		.button.primary {
 		    background-color: #ff4081; /* knallige Farbe */
 		    color: #ffffff !important;
@@ -1087,6 +1088,31 @@ input, select, textarea {
 		    background-color: #ff1c62;
 		    box-shadow: 0 0 30px #ff1c62, 0 0 60px #ff1c62;
 		    transform: scale(1.05); /* leichtes Aufpoppen beim Hover */
+		}
+
+		input[type="submit"].primary_big,
+		input[type="reset"].primary_big,
+		input[type="button"].primary_big,
+		button.primary.big,
+		.button.primary.big {
+		    background-color: #ff4500;   /* kräftiges Orange */
+		    color: white;                /* Textfarbe */
+		    font-size: 1.8em;            /* größerer Text */
+		    padding: 1em 3em;            /* mehr Platz */
+		    border-radius: 12px;         /* abgerundete Ecken */
+		    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Schatten */
+		    transition: all 0.3s ease;   /* sanfter Übergang für Hover */
+		}
+
+		.button.primary.big:hover {
+		    background-color: #ff6600;   /* heller beim Hover */
+		    transform: scale(1.1);       /* leichtes Vergrößern */
+		    box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* stärkerer Schatten */
+		}
+
+		.button.primary.big {
+		    text-shadow: 0 0 5px white;
+		    box-shadow: 0 0 15px #ff4500;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1665,3 +1691,4 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
