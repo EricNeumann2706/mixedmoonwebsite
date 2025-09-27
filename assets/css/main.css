@@ -1076,11 +1076,17 @@ input, select, textarea {
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
-		button.primary,
 		.button.primary {
-			background-color: #ffffff;
-			color: #1b1f22 !important;
-			font-weight: 600;
+		    background-color: #ff4081; /* knallige Farbe */
+		    color: #ffffff !important;
+		    box-shadow: 0 0 20px #ff4081, 0 0 40px #ff4081; /* leuchtender Effekt */
+		    transition: all 0.3s ease-in-out;
+		}
+		
+		.button.primary:hover {
+		    background-color: #ff1c62;
+		    box-shadow: 0 0 30px #ff1c62, 0 0 60px #ff1c62;
+		    transform: scale(1.05); /* leichtes Aufpoppen beim Hover */
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1140,9 +1146,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
