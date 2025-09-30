@@ -1630,6 +1630,32 @@ input, select, textarea {
 
 		}
 
+/* MY HEADER */
+	#top-banner {
+	    background-color: #000; /* Schwarz */
+	    color: #fff;
+	    padding: 10px 20px;
+	    font-size: 0.9em;
+	}
+	
+	#top-banner .banner-container {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	
+	#top-banner .banner-social a {
+	    color: #fff;
+	    margin-left: 15px;
+	    font-size: 1.2em;
+	    transition: color 0.3s;
+	}
+	
+	#top-banner .banner-social a:hover {
+	    color: #1da1f2; /* optional: z.B. Twitter-Blau beim Hover */
+	}
+
+
 /* Footer */
 
 	#footer {
@@ -1666,6 +1692,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
