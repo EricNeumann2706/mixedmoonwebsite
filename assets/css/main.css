@@ -1667,6 +1667,38 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+/* Top-Banner */
+#top-banner {
+    position: fixed;       /* bleibt oben kleben */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;  /* Logo mittig */
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 1000;         /* über allem anderen */
+}
+
+/* Logo mittig platzieren */
+#top-banner .logo img {
+    height: 50px;   /* ggf. anpassen */
+    width: auto;
+}
+
+/* Icons rechts platzieren */
+#top-banner .icons {
+    margin-left: auto;  /* schiebt sie nach rechts */
+    display: flex;
+    gap: 0.5rem;
+}
+
+#top-banner .icons li {
+    padding: 0;
+}
+
+
 
 
 
