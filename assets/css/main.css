@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+    padding-top: 80px; /* Platz für Banner (anpassen an Bannerhöhe) */
+}
+
+body {
 	line-height: 1;
 }
 
@@ -1697,6 +1701,7 @@ input, select, textarea {
 #top-banner .icons li {
     padding: 0;
 }
+
 
 
 
