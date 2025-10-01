@@ -1673,16 +1673,17 @@ input, select, textarea {
 
 /* Top-Banner */
 #top-banner {
-    position: relative;   /* bleibt normal oben, scrollt nicht mit */
+    position: relative;   /* ganz normal im Fluss, scrollt weg */
     width: 100%;
     background: black;
     display: flex;
-    justify-content: space-between; /* Platz zwischen links, mitte, rechts */
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
+    z-index: 10; /* optional, falls er über anderen Inhalten liegen soll */
 }
 
-/* Linker Platzhalter (für echtes zentrieren) */
+/* Linker Platzhalter für sauberes Zentrieren */
 #top-banner .spacer {
     flex: 1;
 }
@@ -1693,7 +1694,7 @@ input, select, textarea {
     text-align: center;
 }
 #top-banner .logo img {
-    height: 50px;
+    height: 50px;   /* anpassen wie du willst */
     width: auto;
 }
 
@@ -1704,6 +1705,7 @@ input, select, textarea {
     justify-content: flex-end;
     gap: 0.5rem;
 }
+
 
 
 
