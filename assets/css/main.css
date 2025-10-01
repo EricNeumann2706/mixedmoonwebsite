@@ -29,9 +29,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
-    padding-top: 160px; /* Platz für Banner (anpassen an Bannerhöhe) */
-}
 
 body {
 	line-height: 1;
@@ -1709,6 +1706,7 @@ input, select, textarea {
 #top-banner {
     position: relative !important;
 }
+
 
 
 
