@@ -1668,19 +1668,45 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* Top-Banner */
+
+/* =========================================
+   Custom Anpassungen für MixedMoonGames
+   ========================================= */
+
+/* Title-Section Bild + Button responsiv */
+#title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#title-section img {
+    max-width: 90%;   /* skaliert mit, nie breiter als 90% */
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Button leicht absetzen */
+#title-section .actions {
+    margin-top: 1rem;
+}
+
+/* Top-Banner (mit Logo und Socials) */
 #top-banner {
-    position: relative;   /* ganz normal im Fluss, scrollt weg */
+    position: relative !important;  /* wichtig: scrollt weg, nicht kleben */
     width: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    z-index: 10; /* optional, falls er über anderen Inhalten liegen soll */
+    z-index: 10;
 }
 
-/* Linker Platzhalter für sauberes Zentrieren */
+/* Platzhalter für echte Zentrierung */
 #top-banner .spacer {
     flex: 1;
 }
@@ -1691,21 +1717,54 @@ input, select, textarea {
     text-align: center;
 }
 #top-banner .logo img {
-    height: 150px;   /* anpassen wie du willst */
+    height: 150px;
     width: auto;
 }
 
-/* Icons rechts */
+#top-banner {
+    position: relative !important;
+}
+
+/* Social-Icons rechts */
 #top-banner .icons {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
 }
-
-#top-banner {
-    position: relative !important;
+#top-banner .icons li {
+    padding: 0;
 }
+
+/* =========================================
+   Responsive Anpassungen (für Handy/Tablet)
+   ========================================= */
+@media screen and (max-width: 600px) {
+
+    /* Title Image verkleinern */
+    #title-section img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Logo im Top-Banner kleiner */
+    #top-banner .logo img {
+        height: 35px;
+    }
+
+    /* Social Icons enger zusammen */
+    #top-banner .icons {
+        gap: 0.25rem;
+    }
+
+    /* Steam-Button kleiner */
+    .button.primary {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
 
 
 
