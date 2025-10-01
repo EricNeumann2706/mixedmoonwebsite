@@ -1684,7 +1684,7 @@ input, select, textarea {
 
 #title-section img {
     width: 90%;
-    max-width: 300px;   /* Bild wird nie breiter als 600px */
+    max-width: 600px !important;    /* Bild wird nie breiter als 600px */
     height: auto;
     display: block;
     margin: 0 auto 1.5rem auto; /* zentrieren + Abstand unten */
@@ -1764,6 +1764,7 @@ input, select, textarea {
         padding: 0.5rem 1rem;
     }
 }
+
 
 
 
