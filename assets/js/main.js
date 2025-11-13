@@ -306,6 +306,12 @@
 			});
 
 		// Events.
+			// Ignore external links with class no-animation
+			$body.on('click', 'a.no-animation', function(event) {
+			// Allow default behavior (open new tab or navigate)
+			return true;
+			});
+
 			$body.on('click', function(event) {
 
 				// Article visible? Hide.
