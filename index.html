@@ -45,9 +45,13 @@
 	justify-self: end;
 	}
 
-    .social-icons i:hover {
-      opacity: 0.6;
-    }
+    .social-icons i {
+	font-size: 30px;
+	margin-left: 25px;     /* größerer Abstand */
+	color: inherit;        /* übernimmt Schwarz vom Elternteil */
+	cursor: pointer;
+	transition: opacity 0.2s;
+	}
 
     .main-image {
       max-width: 90vw;
@@ -95,6 +99,14 @@
       text-decoration:none;
       color:#444;
     }
+
+	.social-icons a {
+	color: #000;           /* macht die Icons schwarz */
+	}
+
+	.social-icons a i {
+	font-size: 30px;       /* kannst du anpassen */
+	}
 
     @media (max-width: 700px) {
 		header {
