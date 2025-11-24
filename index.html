@@ -12,12 +12,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-	background-image: url("images/website_background.png");
-	background-repeat: repeat-y; /* nur nach unten kacheln */
-	background-size: auto;       /* Originalbreite */
-	background-position: top center;
-	font-family: 'Barlow', system-ui, sans-serif;
+	body {
+		background-image: url("images/website_background.png");
+		background-repeat: no-repeat;
+		background-size: 100% auto;     /* Schlüssel: komplette Breite */
+		background-position: top center;
+		font-family: 'Barlow', system-ui, sans-serif;
+		background-color: #F9FAF7;      /* falls Seite länger ist als das Bild */
 	}
 
     .container {
@@ -68,6 +69,7 @@
       max-width: 600px;
       margin: 0 auto 40px auto;
       padding: 20px;
+	  font-family: 'Barlow', sans-serif, system-ui;
       color: #333;
     }
 
@@ -77,8 +79,8 @@
 	align-items: center;
 	justify-content: center;
 
-	width: 328/2px;
-	height: 88p/2x; /* anpassen an eure Grafik */
+	width: 164px;
+	height: 44px; /* anpassen an eure Grafik */
 
 	font-family: 'Barlow', sans-serif;
 	font-size: 20px;
