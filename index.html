@@ -1,106 +1,149 @@
-<html lang="de"> 
-	<head> 
-		<meta charset="utf-8"> 
-		<title>MixedMoonGames GmbH</title> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<meta name="robots" content="noindex, nofollow"> 
-		
-		<style>
-			body {
-			background: #F9FAF7;
-			font-family: system-ui, sans-serif;
-			margin: 0;
-			text-align: center;
-			}
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>BiteSized Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
 
-			header {
-			width: 100%;
-			padding: 20px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			box-sizing: border-box;
-			}
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-			.logo img {
-			width: 80px;
-			height: auto;
-			}
+  <style>
+    body {
+      background: #F9FAF7;
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      text-align: center;
+    }
 
-			.social-icons img {
-			width: 28px;
-			margin-left: 12px;
-			cursor: pointer;
-			}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
-			img.main-image {
-			max-width: 90vw;
-			height: auto;
-			margin: 40px auto;
-			display: block;
-			}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
 
-			.text-block {
-			max-width: 600px;
-			margin: 0 auto;
-			padding: 20px;
-			color: #333;
-			}
+    .logo img {
+      width: 90px;
+      height: auto;
+    }
 
-			footer {
-			position: fixed;
-			bottom: 15px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-size: 14px;
-			}
+    .social-icons i {
+      font-size: 28px;
+      margin-left: 18px;
+      color: #333;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
 
-			footer a {
-			margin-right:15px;
-			text-decoration:none;
-			color:#444;
-			}
+    .social-icons i:hover {
+      opacity: 0.6;
+    }
 
-			/* Responsive */
-			@media(max-width: 600px) {
-			header {
-				flex-direction: column;
-			}
-			.social-icons {
-				margin-top: 10px;
-			}
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<div class="logo">
-			<img src="images\monarchs_at_play_017.png" alt="MixedMoonGames Logo">
-			</div>
+    .main-image {
+      max-width: 90vw;
+      height: auto;
+      margin: 40px auto;
+      display: block;
+    }
 
-			<div class="social-icons">
-			<img src="images\monarchs_at_play_017.png">
-			<img src="images\monarchs_at_play_017.png">
-			<img src="images\monarchs_at_play_017.png">
-			</div>
-		</header>
+    .text-block {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      color: #333;
+    }
 
-		<img src="images\monarchs_website_capsule.png" class="main-image" alt="Monarchs at Play Capsule Image">
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+    }
 
-		<div class="text-block">
-			<h2>Monarchs at Play</h2>
-			<p>
-			Beschreibung blabla – hier kommt später ein kurzer Teasertext hin, der das Spiel 
-			vorstellt und Lust auf mehr macht.
-			</p>
-		</div>
+    .btn img {
+      width: 260px;
+      height: auto;
+      transition: all 0.2s ease-in-out;
+    }
 
-		<img src="images\FörderungLogoleisteEnglisch.webp" class="main-image" style="width:68%;" alt="PressStart Logo">
+    .btn-steam:hover {
+      content: url("assets/buttons/button_active.png");
+    }
 
-		<footer>
-			<a href="impressum.html">Impressum</a>
-			<a href="datenschutz.html">Datenschutz</a>
-		</footer>
+    .btn-presskit:hover {
+      content: url("assets/buttons/button_active.png");
+    }
 
-	</body>
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin-right:15px;
+      text-decoration:none;
+      color:#444;
+    }
+
+    @media(max-width: 700px) {
+      header {
+        flex-direction: column;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="logo">
+      <img src="images/logo_header_weiß.png" alt="BiteSized Logo">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://twitter.com/mixedmoongames" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://instagram.com/mixedmoongames" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/mixedmoongames" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <img src="images\monarchs_website_capsule.png" class="main-image" alt="Titelbild">
+
+  <div class="text-block">
+    <h2>Monarchs at Play</h2>
+    <p>Beschreibung blabla – hier kommt später ein kurzer Teasertext, der das Spiel beschreibt.</p>
+  </div>
+
+  <!-- Buttons -->
+  <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">
+    <img class="btn-steam" src="assets/buttons/button_inactive.png">
+  </a>
+
+  <a class="btn" href="https://mixedmoongames.info/presskit/monarchsAtPlay/">
+    <img class="btn-presskit" src="assets/buttons/button_inactive.png">
+  </a>
+
+  <img src="images\FörderungLogoleisteEnglisch.webp" class="main-image" style="width:68%;" alt="Logoleiste">
+
+  <footer>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </footer>
+
+</div>
+
+</body>
 </html>
