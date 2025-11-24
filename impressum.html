@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="MixedMoonGames GmbH" />
+    <meta name="description" content="Impressum" />
+    <title>IMpressum</title>
+    <style>
+        :root {
+            --bg: #f7f7f8;
+            --card: #ffffff;
+            --text: #111;
+            --muted: #555;
+            --accent: #0b63d6;
+            --maxw: 900px;
+            --pad: 20px;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        html,body{height:100%;margin:0;background:var(--bg);color:var(--text)}
+        .wrap{max-width:var(--maxw);margin:36px auto;padding:var(--pad);background:var(--card);box-shadow:0 6px 24px rgba(20,20,30,0.06);border-radius:8px}
+        header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px}
+        h1{font-size:1.25rem;margin:0}
+        p.lead{margin:0;color:var(--muted);font-size:0.95rem}
+        nav a{color:var(--accent);text-decoration:none;font-size:0.95rem}
+        main{margin-top:18px;line-height:1.6}
+        footer{margin-top:28px;font-size:0.9rem;color:var(--muted)}
+        /* responsive */
+        @media (max-width:520px){
+            .wrap{margin:18px;padding:14px}
+            h1{font-size:1.05rem}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap" role="main">
+        <header>
+            <div>
+                <h1>Datenschutzerklärung</h1>
+                <p class="lead">Informationen zum Umgang mit personenbezogenen Daten auf dieser Website</p>
+            </div>
+            <nav aria-label="Seitennavigation">
+                <a href="/">Zurück zur Startseite</a>
+            </nav>
+        </header>
+
+        <main>
+            <article id="impressum">
+								<h2 class="major">Imprint (German)</h2>
+								<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
+								<p>MixedMoonGames GmbH<br />
+								Eschenring 3<br />
+								39171 S&Uuml;LZETAL</p>
+								<p>Geschäftszeichen: HRB 36208<br />
+								Registergericht: Amtsgericht Stendal</p>
+								<p><strong>Vertreten durch:</strong><br />
+								Eric Neumann, Emanuel Thon</p>
+								<h4>Kontakt</h4>
+								<p>E-Mail: mixed.moon.games@gmail.com</p>
+								<h4>Umsatzsteuer-ID</h4>
+								<p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+								DE456159968</p>
+							</article>
+        </main>
+
+        <footer>
+            <small>&copy; <span id="year"></span> Ihr Name / Ihre Firma</small>
+        </footer>
+    </div>
+
+    <script>
+        // Automatisches Jahr im Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
