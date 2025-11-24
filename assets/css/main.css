@@ -1776,52 +1776,23 @@ input, select, textarea {
         font-size: 0.8rem;
         padding: 0.5rem 1rem;
     }
-}
 
-/* === Mobile Button Fix === */
-@media screen and (max-width: 600px) {
-    .button,
+	.button,
     .button.primary {
         height: auto;
         line-height: 1.2;
         padding: 0.8rem 1.2rem;
     }
-}
 
-/* === Social Icons: mehr Abstand im Banner === */
-#top-banner {
+	#top-banner {
     padding: 1rem 2rem;
-}
+	}
 
-#top-banner .icons li a {
-    margin-top: 0.3rem;
-}
+	#top-banner .icons li a {
+		margin-top: 0.3rem;
+	}
 
-/* === Mobile Gap unter Titelbild reduzieren === */
-@media screen and (max-width: 600px) {
-    #wrapper {
+	#wrapper {
         padding-top: 0.5rem !important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
