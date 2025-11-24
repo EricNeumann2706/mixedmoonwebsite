@@ -1737,6 +1737,19 @@ input, select, textarea {
     padding: 0;
 }
 
+/* Logoleiste */
+#funding-bar {
+    margin: 2rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+#funding-bar img {
+    max-width: 80%;
+    height: auto;
+    opacity: 0.9;
+}
+
 /* =========================================
    Responsive Anpassungen (für Handy/Tablet)
    ========================================= */
