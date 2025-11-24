@@ -1227,20 +1227,10 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
-
-			#wrapper {
-				padding: 2rem 1rem;
+		@media screen and (max-width: 600px) {
+    		#wrapper {
+        		padding-top: 0.5rem !important;
 			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#wrapper {
-				padding: 1rem;
-			}
-
 		}
 
 /* Header */
