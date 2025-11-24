@@ -1804,3 +1804,29 @@ input, select, textarea {
         margin: 0.5rem 0 !important;
     }
 }
+
+/* =========================================
+   MOBILE: Social Icons unter das Titelbild verschieben
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Top-Banner aufräumen: Icons dort ausblenden */
+    #top-banner .icons {
+        display: none;
+    }
+
+    /* Icons unter Titelbereich einfügen */
+    #mobile-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    #mobile-icons li a {
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
