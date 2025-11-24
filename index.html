@@ -72,24 +72,33 @@
     }
 
     /* Buttons */
-    .btn {
-      display: inline-block;
-      margin: 10px;
-    }
+	.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 
-    .btn img {
-      width: 260px;
-      height: auto;
-      transition: all 0.2s ease-in-out;
-    }
+	width: 328px;
+	height: 88px; /* anpassen an eure Grafik */
 
-    .btn-steam:hover {
-      content: url("images/buttons/button_active.png");
-    }
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	color: white; /* Farbe des Textes */
 
-    .btn-presskit:hover {
-      content: url("images/buttons/button_active.png");
-    }
+	background-size: cover;
+	background-position: center;
+	transition: 0.2s ease-in-out;
+	}
+
+	/* STEAM BUTTON */
+	.btn-steam {
+	background-image: url("images/buttons/button_inactive.png");
+	}
+
+	.btn-steam:hover {
+	background-image: url("images/buttons/button_active.png");
+	}
 
     footer {
       text-align: center;
@@ -150,13 +159,9 @@
   </div>
 
   <!-- Buttons -->
-  <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">
-    <img class="btn-steam" src="images/buttons/button_inactive.png">
-  </a>
+  	<a class="btn btn-steam" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Available on Steam</a>
 
-  <a class="btn" href="https://mixedmoongames.info/presskit/monarchsAtPlay/">
-    <img class="btn-presskit" src="images/buttons/button_inactive.png">
-  </a>
+	<a class="btn btn-steam" href="https://mixedmoongames.info/presskit/monarchsAtPlay/">Presskit</a>
 
   <img src="images\FörderungLogoleisteEnglisch.webp" class="main-image" style="width:68%;" alt="Logoleiste">
 
