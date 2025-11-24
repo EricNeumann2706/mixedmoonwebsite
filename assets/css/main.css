@@ -1795,4 +1795,12 @@ input, select, textarea {
 	#wrapper {
         padding-top: 0.5rem !important;
     }
+
+	#header .content {
+        padding: 1rem 1rem !important;
+    }
+
+    #title-section {
+        margin: 0.5rem 0 !important;
+    }
 }
