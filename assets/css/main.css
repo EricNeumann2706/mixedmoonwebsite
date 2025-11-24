@@ -1227,10 +1227,20 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 600px) {
-    		#wrapper {
-        		padding-top: 0.5rem !important;
+		@media screen and (max-width: 736px) {
+
+			#wrapper {
+				padding: 2rem 1rem;
 			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#wrapper {
+				padding: 1rem;
+			}
+
 		}
 
 /* Header */
@@ -1756,21 +1766,41 @@ input, select, textarea {
         height: 35px;
     }
 
-	#top-banner {
-    padding: 1rem 2rem;
-	}
-
     /* Social Icons enger zusammen */
     #top-banner .icons {
         gap: 0.25rem;
     }
 
     /* Steam-Button kleiner */
+    .button.primary {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* === Mobile Button Fix === */
+@media screen and (max-width: 600px) {
     .button,
     .button.primary {
         height: auto;
         line-height: 1.2;
         padding: 0.8rem 1.2rem;
+    }
+}
+
+/* === Social Icons: mehr Abstand im Banner === */
+#top-banner {
+    padding: 1rem 2rem;
+}
+
+#top-banner .icons li a {
+    margin-top: 0.3rem;
+}
+
+/* === Mobile Gap unter Titelbild reduzieren === */
+@media screen and (max-width: 600px) {
+    #wrapper {
+        padding-top: 0.5rem !important;
     }
 }
 
